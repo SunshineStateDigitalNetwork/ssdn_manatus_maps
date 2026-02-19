@@ -84,9 +84,12 @@ def martin_county_dc_map(rec):
     sr.type = rec.type
 
     # thumbnail
-    if item_hash:
-        tn = f'https://www.martindigitalhistory.org/files/thumbnails/{item_hash.split(".")[0]}.jpg'
-    else:
+    try:
+        if item_hash:
+            tn = f'https://www.martindigitalhistory.org/files/thumbnails/{item_hash.split(".")[0]}.jpg'
+        else:
+            tn = None
+    except UnboundLocalError:
         tn = None
 
     yield sr, tn
