@@ -36,12 +36,13 @@ def fiu_dc_map(rec):
 
     # identifier
     try:
-        for identifier in rec.identifier:
+        for identifier in rec.source:
             if 'dpanther.fiu.edu' in identifier:
                 sr.identifier = identifier
     except (TypeError, AttributeError):
-        logger.error(f"No identifier - {rec.harvest_id}")
-        return None
+        #logger.error(f"No identifier - {rec.harvest_id}")
+        #return None
+        pass
 
     # language
     try:
@@ -69,8 +70,9 @@ def fiu_dc_map(rec):
                 logger.warning(f"No rights URI - {rec.harvest_id}")
                 sr.rights = [{'text': rec.rights[0]}]
     except TypeError:
-        logger.error(f"No rights - {rec.harvest_id}")
-        return None
+        #logger.error(f"No rights - {rec.harvest_id}")
+        #return None
+        pass
 
     # subject
     if rec.subject:

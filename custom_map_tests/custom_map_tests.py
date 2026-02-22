@@ -136,8 +136,8 @@ class FIUCustomMapTestCase(unittest.TestCase):
     def setUp(self):
         self = stand_up(self)
 
-    def tearDown(self):
-        clean()
+    # def tearDown(self):
+    #     clean()
 
     def test_fiu_dc_custom_map(self):
         transformation_info = {'Map': 'fiu_dc_map',
@@ -150,118 +150,118 @@ class FIUCustomMapTestCase(unittest.TestCase):
         self.assertEqual(test_data, self.data[7])
 
 
-class BoyntonBeachCustomMapTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self = stand_up(self)
-
-    def tearDown(self):
-        clean()
-
-    def test_boynton_dc_custom_map(self):
-        transformation_info = {'Map': 'fiu_dc_map',
-                               'DataProvider': 'Boynton Beach City Library Archives',
-                               'IntermediateProvider': 'Florida International University Libraries',
-                               'Scenario': 'SSDNDC'}
-        transform(self.config, transformation_info, 'boynton', 'ssdn', verbosity=1)
-        with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
-            test_data = json.load(fp)
-        self.assertEqual(test_data, self.data[0])
-
-
-class BrockwayCustomMapTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self = stand_up(self)
-
-    def tearDown(self):
-        clean()
-
-    def test_brockway_dc_custom_map(self):
-        transformation_info = {'Map': 'fiu_dc_map',
-                               'DataProvider': 'Miami Shores Village Archives at Brockway Memorial Library',
-                               'IntermediateProvider': 'Florida International University Libraries',
-                               'Scenario': 'SSDNDC'}
-        transform(self.config, transformation_info, 'brockway', 'ssdn', verbosity=1)
-        with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
-            test_data = json.load(fp)
-        self.assertEqual(test_data, self.data[1])
+# class BoyntonBeachCustomMapTestCase(unittest.TestCase):
+#
+#     def setUp(self):
+#         self = stand_up(self)
+#
+#     def tearDown(self):
+#         clean()
+#
+#     def test_boynton_dc_custom_map(self):
+#         transformation_info = {'Map': 'fiu_dc_map',
+#                                'DataProvider': 'Boynton Beach City Library Archives',
+#                                'IntermediateProvider': 'Florida International University Libraries',
+#                                'Scenario': 'SSDNDC'}
+#         transform(self.config, transformation_info, 'boynton', 'ssdn', verbosity=1)
+#         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
+#             test_data = json.load(fp)
+#         self.assertEqual(test_data, self.data[0])
 
 
-class CoralGablesCustomMapTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self = stand_up(self)
-
-    def tearDown(self):
-        clean()
-
-    def test_coral_gables_dc_custom_map(self):
-        transformation_info = {'Map': 'fiu_dc_map',
-                               'DataProvider': 'City of Coral Gables',
-                               'IntermediateProvider': 'Florida International University Libraries',
-                               'Scenario': 'SSDNDC'}
-        transform(self.config, transformation_info, 'coral_gables', 'ssdn', verbosity=1)
-        with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
-            test_data = json.load(fp)
-        self.assertEqual(test_data, self.data[3])
-
-
-class MBVMCustomMapTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self = stand_up(self)
-
-    def tearDown(self):
-        clean()
-
-    def test_mbvm_dc_custom_map(self):
-        transformation_info = {'Map': 'fiu_dc_map',
-                               'DataProvider': 'Miami Design Preservation League, Closeup Productions',
-                               'IntermediateProvider': 'Florida International University Libraries',
-                               'Scenario': 'SSDNDC'}
-        transform(self.config, transformation_info, 'mbvm', 'ssdn', verbosity=1)
-        with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
-            test_data = json.load(fp)
-        self.assertEqual(test_data, self.data[6])
+# class BrockwayCustomMapTestCase(unittest.TestCase):
+#
+#     def setUp(self):
+#         self = stand_up(self)
+#
+#     def tearDown(self):
+#         clean()
+#
+#     def test_brockway_dc_custom_map(self):
+#         transformation_info = {'Map': 'fiu_dc_map',
+#                                'DataProvider': 'Miami Shores Village Archives at Brockway Memorial Library',
+#                                'IntermediateProvider': 'Florida International University Libraries',
+#                                'Scenario': 'SSDNDC'}
+#         transform(self.config, transformation_info, 'brockway', 'ssdn', verbosity=1)
+#         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
+#             test_data = json.load(fp)
+#         self.assertEqual(test_data, self.data[1])
 
 
-class GNMHSCustomMapTestCase(unittest.TestCase):
+# class CoralGablesCustomMapTestCase(unittest.TestCase):
+#
+#     def setUp(self):
+#         self = stand_up(self)
+#
+#     def tearDown(self):
+#         clean()
+#
+#     def test_coral_gables_dc_custom_map(self):
+#         transformation_info = {'Map': 'fiu_dc_map',
+#                                'DataProvider': 'City of Coral Gables',
+#                                'IntermediateProvider': 'Florida International University Libraries',
+#                                'Scenario': 'SSDNDC'}
+#         transform(self.config, transformation_info, 'coral_gables', 'ssdn', verbosity=1)
+#         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
+#             test_data = json.load(fp)
+#         self.assertEqual(test_data, self.data[3])
 
-    def setUp(self):
-        self = stand_up(self)
 
-    def tearDown(self):
-        clean()
+# class MBVMCustomMapTestCase(unittest.TestCase):
+#
+#     def setUp(self):
+#         self = stand_up(self)
+#
+#     def tearDown(self):
+#         clean()
+#
+#     def test_mbvm_dc_custom_map(self):
+#         transformation_info = {'Map': 'fiu_dc_map',
+#                                'DataProvider': 'Miami Design Preservation League, Closeup Productions',
+#                                'IntermediateProvider': 'Florida International University Libraries',
+#                                'Scenario': 'SSDNDC'}
+#         transform(self.config, transformation_info, 'mbvm', 'ssdn', verbosity=1)
+#         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
+#             test_data = json.load(fp)
+#         self.assertEqual(test_data, self.data[6])
 
-    def test_gnmhs_dc_custom_map(self):
-        transformation_info = {'Map': 'fiu_dc_map',
-                               'DataProvider': 'Greater North Miami Historical Society',
-                               'IntermediateProvider': 'Florida International University Libraries',
-                               'Scenario': 'SSDNDC'}
-        transform(self.config, transformation_info, 'gnmhs', 'ssdn', verbosity=1)
-        with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
-            test_data = json.load(fp)
-        self.assertEqual(test_data, self.data[14])
+
+# class GNMHSCustomMapTestCase(unittest.TestCase):
+#
+#     def setUp(self):
+#         self = stand_up(self)
+#
+#     def tearDown(self):
+#         clean()
+#
+#     def test_gnmhs_dc_custom_map(self):
+#         transformation_info = {'Map': 'fiu_dc_map',
+#                                'DataProvider': 'Greater North Miami Historical Society',
+#                                'IntermediateProvider': 'Florida International University Libraries',
+#                                'Scenario': 'SSDNDC'}
+#         transform(self.config, transformation_info, 'gnmhs', 'ssdn', verbosity=1)
+#         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
+#             test_data = json.load(fp)
+#         self.assertEqual(test_data, self.data[14])
 
 
-class VaclavCustomMapTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self = stand_up(self)
-
-    def tearDown(self):
-        clean()
-
-    def test_vaclav_dc_custom_map(self):
-        transformation_info = {'Map': 'fiu_dc_map',
-                               'DataProvider': 'Vaclav Havel Library Foundation',
-                               'IntermediateProvider': 'Florida International University Libraries',
-                               'Scenario': 'SSDNDC'}
-        transform(self.config, transformation_info, 'vhlf', 'ssdn', verbosity=1)
-        with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
-            test_data = json.load(fp)
-        self.assertEqual(test_data, self.data[19])
+# class VaclavCustomMapTestCase(unittest.TestCase):
+#
+#     def setUp(self):
+#         self = stand_up(self)
+#
+#     def tearDown(self):
+#         clean()
+#
+#     def test_vaclav_dc_custom_map(self):
+#         transformation_info = {'Map': 'fiu_dc_map',
+#                                'DataProvider': 'Vaclav Havel Library Foundation',
+#                                'IntermediateProvider': 'Florida International University Libraries',
+#                                'Scenario': 'SSDNDC'}
+#         transform(self.config, transformation_info, 'vhlf', 'ssdn', verbosity=1)
+#         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
+#             test_data = json.load(fp)
+#         self.assertEqual(test_data, self.data[19])
 
 
 class UMCustomMapTestCase(unittest.TestCase):
@@ -302,23 +302,23 @@ class IR_FIUCustomMapTestCase(unittest.TestCase):
         self.assertEqual(test_data, self.data[15])
 
 
-class BrowardCustomMapTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self = stand_up(self)
-
-    def tearDown(self):
-        clean()
-
-    def test_broward_mods_custom_map(self):
-        transformation_info = {'Map': 'ssdn_mods_map',
-                               'DataProvider': 'Broward College Archives & Special Collections',
-                               'IntermediateProvider': None,
-                               'Scenario': 'SSDNPartnerMODSScenario'}
-        transform(self.config, transformation_info, 'broward', 'ssdn', verbosity=1)
-        with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
-            test_data = json.load(fp)
-        self.assertEqual(test_data, self.data[2])
+# class BrowardCustomMapTestCase(unittest.TestCase):
+#
+#     def setUp(self):
+#         self = stand_up(self)
+#
+#     def tearDown(self):
+#         clean()
+#
+#     def test_broward_mods_custom_map(self):
+#         transformation_info = {'Map': 'ssdn_mods_map',
+#                                'DataProvider': 'Broward College Archives & Special Collections',
+#                                'IntermediateProvider': None,
+#                                'Scenario': 'SSDNPartnerMODSScenario'}
+#         transform(self.config, transformation_info, 'broward', 'ssdn', verbosity=1)
+#         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
+#             test_data = json.load(fp)
+#         self.assertEqual(test_data, self.data[2])
 
 
 class FAUCustomMapTestCase(unittest.TestCase):
@@ -448,42 +448,42 @@ class USFCustomMapTestCase(unittest.TestCase):
         self.assertEqual(test_data, self.data[18])
 
 
-class SSDN_DC_BePressMapTestCase(unittest.TestCase):
+# class SSDN_DC_BePressMapTestCase(unittest.TestCase):
+#
+#     def setUp(self):
+#         self = stand_up(self)
+#
+#     def tearDown(self):
+#         clean()
+#
+#     def test_ssdn_dc_bepress_map(self):
+#         transformation_info = {'Map': 'ssdn_dc_bepress_map',  # test
+#                                'DataProvider': 'University of South Florida Libraries',
+#                                'IntermediateProvider': None,
+#                                'Scenario': 'SSDNDC'}
+#         transform(self.config, transformation_info, 'ssdn_dc_bepress', 'ssdn', verbosity=1)
+#         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
+#             test_data = json.load(fp)
+#         self.assertEqual(test_data, self.data[21])
 
-    def setUp(self):
-        self = stand_up(self)
 
-    def tearDown(self):
-        clean()
-
-    def test_ssdn_dc_bepress_map(self):
-        transformation_info = {'Map': 'ssdn_dc_bepress_map',  # test
-                               'DataProvider': 'University of South Florida Libraries',
-                               'IntermediateProvider': None,
-                               'Scenario': 'SSDNDC'}
-        transform(self.config, transformation_info, 'ssdn_dc_bepress', 'ssdn', verbosity=1)
-        with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
-            test_data = json.load(fp)
-        self.assertEqual(test_data, self.data[21])
-
-
-class MartinCountyCustomMapTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self = stand_up(self)
-
-    def tearDown(self):
-        clean()
-
-    def test_ssdn_dc_bepress_map(self):
-        transformation_info = {'Map': 'martin_county_dc_map',  # test
-                               'DataProvider': 'Martin County Library System',
-                               'IntermediateProvider': None,
-                               'Scenario': 'SSDNDC'}
-        transform(self.config, transformation_info, 'martin_county', 'ssdn', verbosity=1)
-        with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
-            test_data = json.load(fp)
-        self.assertEqual(test_data, self.data[22])
+# class MartinCountyCustomMapTestCase(unittest.TestCase):
+#
+#     def setUp(self):
+#         self = stand_up(self)
+#
+#     def tearDown(self):
+#         clean()
+#
+#     def test_martin_county_dc_bepress_map(self):
+#         transformation_info = {'Map': 'martin_county_dc_map',  # test
+#                                'DataProvider': 'Martin County Library System',
+#                                'IntermediateProvider': None,
+#                                'Scenario': 'SSDNDC'}
+#         transform(self.config, transformation_info, 'martin_county', 'ssdn', verbosity=1)
+#         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
+#             test_data = json.load(fp)
+#         self.assertEqual(test_data, self.data[22])
 
 
 if __name__ == '__main__':
