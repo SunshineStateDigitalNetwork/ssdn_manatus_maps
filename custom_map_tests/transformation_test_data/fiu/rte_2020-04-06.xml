@@ -1,29 +1,175 @@
 <?xml version="1.0"?>
 <oai>
-    <record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <header>
-      <identifier>oai:dpanther.fiu.edu:4159</identifier>
-      <datestamp>2026-02-13T08:31:50Z</datestamp>
-      <setSpec>fiu_sfwmd</setSpec>
-      <setSpec>fiu_rte</setSpec>
-      <setSpec>fiu_dpla</setSpec>
-    </header>
-    <metadata>
-      <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:invenio="http://invenio-software.org/elements/1.0" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
-        <dc:identifier>local:FI12090331</dc:identifier>
-        <dc:identifier>local:(OCoLC)36806182</dc:identifier>
-        <dc:language>eng</dc:language>
-        <dc:creator>South Florida Water Management District (Fla.)</dc:creator>
-        <dc:title>Water Budget Analysis for the Everglades Nutrient Removal Project, and Stormwater Treatment Area 1 West  (August 20, 1998 to August 30, 2000)</dc:title>
-        <dc:identifier>https://dpanther.fiu.edu/record/4159/files/FI12090331.pdf</dc:identifier>
-        <dc:identifier>https://dpanther.fiu.edu/record/4159/files/FI12090331_00001.html</dc:identifier>
-        <dc:identifier>https://dpanther.fiu.edu/record/4159/files/FI12090331_pdf.txt</dc:identifier>
-        <dc:date>2025-09-09T03:42:06Z</dc:date>
-        <dc:identifier>http://dpanther.fiu.edu/record/4159</dc:identifier>
-        <dc:source>http://dpanther.fiu.edu/record/4159</dc:source>
-        <dc:rights>Please contact the owning institution for licensing and permissions. It is the users responsibility to ensure use does not violate any third party rights.</dc:rights>
-        <dc:type>Text</dc:type>
-      </oai_dc:dc>
-    </metadata>
-  </record>
+    <record>
+      <header>
+        <identifier>oai:dpanther.fiu.edu:4159</identifier>
+        <datestamp>2026-02-13T08:31:50Z</datestamp>
+        <setSpec>fiu_sfwmd</setSpec>
+        <setSpec>fiu_rte</setSpec>
+        <setSpec>fiu_dpla</setSpec>
+      </header>
+      <metadata>
+        <marc:record xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd" type="Bibliographic">
+          <marc:leader>          22        4500</marc:leader>
+          <marc:controlfield tag="001">4159</marc:controlfield>
+          <marc:controlfield tag="005">20260213033150.0</marc:controlfield>
+          <marc:datafield tag="024" ind1="7" ind2="0">
+            <marc:subfield code="a">FI12090331</marc:subfield>
+            <marc:subfield code="2">local</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="024" ind1="7" ind2="0">
+            <marc:subfield code="a">(OCoLC)36806182</marc:subfield>
+            <marc:subfield code="2">local</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">FI12090331_00001</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="037" ind1=" " ind2=" ">
+            <marc:subfield code="a">SBMGENERAL</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="041" ind1=" " ind2=" ">
+            <marc:subfield code="a">eng</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Water Budget Analysis for the Everglades Nutrient Removal Project, and Stormwater Treatment Area 1 West  (August 20, 1998 to August 30, 2000)</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="246" ind1=" " ind2=" ">
+            <marc:subfield code="a">Everglades Nutrient Removal Project</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="264" ind1=" " ind2=" ">
+            <marc:subfield code="c">2000-12</marc:subfield>
+            <marc:subfield code="b">SFWMD ( West Palm Beach, FL )</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="269" ind1=" " ind2=" ">
+            <marc:subfield code="a">2000-12</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">Text</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">(Bibliography)  Includes bibliographical references (page 41)</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">(Statement of Responsibility)  produced by Hydro Information Systems &amp; Assessment Department, Environmental Monitoring &amp; Assessment Division, South Florida Water Management District</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">"December 2000"</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">TECHNICAL PUBLICATION EMA #388</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">EXECUTIVE SUMMARY</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">SFWMD</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Florida International University</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="530" ind1=" " ind2=" ">
+            <marc:subfield code="a">vii, 63 pages. : ill. ;</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="540" ind1=" " ind2=" ">
+            <marc:subfield code="a">Please contact the owning institution for licensing and permissions. It is the users responsibility to ensure use does not violate any third party rights.</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Water -- Purification -- Phosphorus removal ( lcsh )</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Hydrological forecasting ( lcsh )</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Restoration ecology ( lcsh )</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="651" ind1=" " ind2=" ">
+            <marc:subfield code="a">Florida</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="651" ind1=" " ind2=" ">
+            <marc:subfield code="a">Everglades</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="651" ind1=" " ind2=" ">
+            <marc:subfield code="a">Everglades Nutrient Removal Project</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="690" ind1=" " ind2=" ">
+            <marc:subfield code="a">DPLA</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="692" ind1=" " ind2=" ">
+            <marc:subfield code="a">Florida International University</marc:subfield>
+            <marc:subfield code="0">600828</marc:subfield>
+            <marc:subfield code="2">local</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="693" ind1=" " ind2=" ">
+            <marc:subfield code="a">South Florida Water Management District</marc:subfield>
+            <marc:subfield code="0">600855</marc:subfield>
+            <marc:subfield code="2">local</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="694" ind1=" " ind2=" ">
+            <marc:subfield code="a">SFWMD</marc:subfield>
+            <marc:subfield code="0">600855</marc:subfield>
+            <marc:subfield code="2">local</marc:subfield>
+            <marc:subfield code="u">https://www.sfwmd.gov/</marc:subfield>
+            <marc:subfield code="y">https://dpanther.fiu.edu/nanna/thumbnail/image/600855</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">South Florida Water Management District (Fla.)</marc:subfield>
+            <marc:subfield code="e">main entity</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="720" ind1=" " ind2=" ">
+            <marc:subfield code="a">Abtew, Wossenu</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="720" ind1=" " ind2=" ">
+            <marc:subfield code="a">Raymond, John H.</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="720" ind1=" " ind2=" ">
+            <marc:subfield code="a">Imru, Muluneh</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="850" ind1=" " ind2=" ">
+            <marc:subfield code="a">FIU</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="856" ind1="4" ind2=" ">
+            <marc:subfield code="u">https://dpanther.fiu.edu/record/4159/files/FI12090331.pdf</marc:subfield>
+            <marc:subfield code="y">FI12090331</marc:subfield>
+            <marc:subfield code="9">7de50fdb-afee-441d-8a75-bd6ac2f6a4a8</marc:subfield>
+            <marc:subfield code="s">2725799</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="856" ind1="4" ind2=" ">
+            <marc:subfield code="u">https://dpanther.fiu.edu/record/4159/files/FI12090331_00001.html</marc:subfield>
+            <marc:subfield code="y">FI12090331_00001</marc:subfield>
+            <marc:subfield code="9">f9426912-2d94-4386-b491-3b8fc5d69005</marc:subfield>
+            <marc:subfield code="s">131360</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="856" ind1="4" ind2=" ">
+            <marc:subfield code="u">https://dpanther.fiu.edu/record/4159/files/FI12090331_pdf.txt</marc:subfield>
+            <marc:subfield code="y">FI12090331_pdf</marc:subfield>
+            <marc:subfield code="9">3b135ec7-7c3c-411c-a2a8-57fc7d77dde6</marc:subfield>
+            <marc:subfield code="s">120058</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="909" ind1="C" ind2="O">
+            <marc:subfield code="o">oai:dpanther.fiu.edu:4159</marc:subfield>
+            <marc:subfield code="p">fiu_rte</marc:subfield>
+            <marc:subfield code="p">fiu_sfwmd</marc:subfield>
+            <marc:subfield code="p">GLOBAL_SET</marc:subfield>
+            <marc:subfield code="p">fiu_dpla</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="960" ind1=" " ind2=" ">
+            <marc:subfield code="a">SobekCM Metadata Template</marc:subfield>
+            <marc:subfield code="b">ssarramr</marc:subfield>
+            <marc:subfield code="c">FIU,Florida International University</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="982" ind1=" " ind2=" ">
+            <marc:subfield code="a">All Records</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="982" ind1=" " ind2=" ">
+            <marc:subfield code="a">Everglades Digital Library: Reclaiming the Everglades</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="982" ind1=" " ind2=" ">
+            <marc:subfield code="a">South Florida Water Management District</marc:subfield>
+          </marc:datafield>
+          <marc:datafield tag="982" ind1=" " ind2=" ">
+            <marc:subfield code="a">Florida International University</marc:subfield>
+          </marc:datafield>
+        </marc:record>
+      </metadata>
+    </record>
 </oai>

@@ -1,5 +1,6 @@
 import json
 import os
+import logging
 import unittest
 from datetime import date
 from pathlib import Path
@@ -8,7 +9,8 @@ from unittest.mock import patch, MagicMock
 from manatus.cli import transform
 
 test_dir_path = os.path.abspath(os.path.dirname(__file__))
-
+logger = logging.getLogger(__name__)
+logger.addHandler(logging.NullHandler())
 
 def stand_up(self):
     """
@@ -139,11 +141,11 @@ class FIUCustomMapTestCase(unittest.TestCase):
     # def tearDown(self):
     #     clean()
 
-    def test_fiu_dc_custom_map(self):
-        transformation_info = {'Map': 'fiu_dc_map',
+    def test_fiu_tind_marc_map(self):
+        transformation_info = {'Map': 'tind_marc_map',
                                'DataProvider': 'Florida International University Libraries',
                                'IntermediateProvider': None,
-                               'Scenario': 'SSDNDC'}
+                               'Scenario': 'MARCXML'}
         transform(self.config, transformation_info, 'fiu', 'ssdn', verbosity=1)
         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
             test_data = json.load(fp)
