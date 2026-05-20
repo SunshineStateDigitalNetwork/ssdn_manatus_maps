@@ -138,8 +138,8 @@ class FIUCustomMapTestCase(unittest.TestCase):
     def setUp(self):
         self = stand_up(self)
 
-    # def tearDown(self):
-    #     clean()
+    def tearDown(self):
+        clean()
 
     def test_fiu_tind_marc_map(self):
         transformation_info = {'Map': 'tind_marc_map',
@@ -160,11 +160,11 @@ class FIUCustomMapTestCase(unittest.TestCase):
 #     def tearDown(self):
 #         clean()
 #
-#     def test_boynton_dc_custom_map(self):
-#         transformation_info = {'Map': 'fiu_dc_map',
+#     def test_boynton_tind_marc_map(self):
+#         transformation_info = {'Map': 'tind_marc_map',
 #                                'DataProvider': 'Boynton Beach City Library Archives',
 #                                'IntermediateProvider': 'Florida International University Libraries',
-#                                'Scenario': 'SSDNDC'}
+#                                'Scenario': 'MARCXML'}
 #         transform(self.config, transformation_info, 'boynton', 'ssdn', verbosity=1)
 #         with open(os.path.join(test_dir_path, 'transformation_test_data', f'SSDN_TMP-{date.today()}.jsonl')) as fp:
 #             test_data = json.load(fp)
