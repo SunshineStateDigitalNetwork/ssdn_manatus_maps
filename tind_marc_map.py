@@ -12,10 +12,10 @@ def tind_marc_map(rec):
     tn = None
 
     # identifier (required)
-    if rec.harvest_id:
+    if rec.is_shown_at:
         sr.identifier = rec.is_shown_at
     else:
-        logger.error("No identifier - {rec.harvest_id}")
+        logger.error(f"No identifier - {rec.harvest_id}")
         return None
 
     # title (required)
