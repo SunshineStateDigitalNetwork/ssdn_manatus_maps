@@ -33,11 +33,13 @@ def tind_marc_map(rec):
         sr.contributor = [{"name": n} for n in rec.contributor]
 
     # date
-    try:
-        sr.date = {'begin': rec.date,
-                   'end': rec.date,
-                   'displayDate': rec.date}
-    except TypeError:
+    if rec.date:
+        sr.date = {
+            'begin': rec.date,
+            'end': rec.date,
+            'displayDate': rec.date
+        }
+    else:
         logger.info(f"No date - {rec.harvest_id}")
 
     # description
